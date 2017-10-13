@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "800250656625",
+    "firebase_url": "https://nikiai-31045.firebaseio.com",
+    "project_id": "nikiai-31045",
+    "storage_bucket": "nikiai-31045.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800250656625:android:c5058d36f9a2bae6",
+        "android_client_info": {
+          "package_name": "com.example.jaykishan.niki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800250656625-k6taon9hmif1o94vj2g1jpb39rvcp8sb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jaykishan.niki",
+            "certificate_hash": "3dfbb096c0d9f72ff095ce47ff1c1e426df51cf2"
+          }
+        },
+        {
+          "client_id": "800250656625-8f8cf9hl772kopa8gjenc82bi9ohivim.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCz1q--n7FHFjh5V3vhG3MVaj75QtSW-Kk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800250656625-8f8cf9hl772kopa8gjenc82bi9ohivim.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
