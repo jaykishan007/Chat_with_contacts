@@ -25,6 +25,14 @@ public class ContactsActivityFragment extends Fragment implements LoaderManager.
     private ListView contactsListView;
     private static final int CONTACTS_LOADER = 0;
 
+    private Uri contactsUri = ContactsContract.Contacts.CONTENT_URI; // The content URI of the phone contacts
+
+    private String[] projection = {
+            ContactsContract.Contacts._ID,
+            ContactsContract.Contacts.PHOTO_URI,
+            ContactsContract.Contacts.DISPLAY_NAME
+    };
+
 
     public ContactsActivityFragment() {
     }
@@ -46,7 +54,6 @@ public class ContactsActivityFragment extends Fragment implements LoaderManager.
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
 
-
             }
         });
 
@@ -61,20 +68,12 @@ public class ContactsActivityFragment extends Fragment implements LoaderManager.
 
     @Override
     public Loader<Cursor> onCreateLoader(int i, Bundle bundle) {
-        Uri contactsUri = ContactsContract.Contacts.CONTENT_URI; // The content URI of the phone contacts
 
-        String[] projection = {
-                ContactsContract.Contacts._ID,
-
-                ContactsContract.Contacts.PHOTO_URI,
-
-                // The columns to return for each row
-                ContactsContract.Contacts.DISPLAY_NAME
-        } ;
 
         String selection = null;                                 //Selection criteria
         String[] selectionArgs = {};                             //Selection criteria
-        String sortOrder = null;                                 //The sort order for the returned rows
+        String sortOrder = ContactsContract.CommonDataKinds.Phone.DISPLAY_NAME+" ASC";//The sort order for the returned rows
+
 
         return new CursorLoader(
                 getActivity(),
