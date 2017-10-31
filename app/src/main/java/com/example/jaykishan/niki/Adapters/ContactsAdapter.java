@@ -1,4 +1,4 @@
-package com.example.jaykishan.niki;
+package com.example.jaykishan.niki.Adapters;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -8,6 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
+
+import com.example.jaykishan.niki.R;
+import com.example.jaykishan.niki.ViewHolders.ContactsViewHolder;
 
 /**
  * Created by jaykishan on 28/10/17.

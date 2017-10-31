@@ -1,4 +1,4 @@
-package com.example.jaykishan.niki;
+package com.example.jaykishan.niki.Fragments;
 
 import android.database.Cursor;
 import android.net.Uri;
@@ -14,6 +14,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+
+import com.example.jaykishan.niki.Adapters.ContactsAdapter;
+import com.example.jaykishan.niki.R;
 
 /**
  * A placeholder fragment containing a simple view.

@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,ContactsActivity.class);
                 startActivityForResult(intent,requestCode);
+
             }
         });
     }
